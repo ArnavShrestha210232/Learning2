@@ -3,9 +3,12 @@ import 'package:get/get.dart';
 import 'package:learning/controllers/state_controller.dart';
 import 'package:learning/utils/routes.dart';
 
+import 'controllers/nav_bar_controller.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Get.put(StateController());
+  Get.put(NavBarController());
   runApp(const MyApp());
 }
 

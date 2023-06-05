@@ -24,7 +24,7 @@ class UserLogin extends StatelessWidget {
                   height: 100,
                 ),
                 const CircleAvatar(
-                  radius: 60, 
+                  radius: 60,
                   backgroundColor: Colors.blueAccent,
                 ),
                 const SizedBox(
@@ -55,7 +55,9 @@ class UserLogin extends StatelessWidget {
                 ),
                 CustomButton(
                   text: 'Login',
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.offAllNamed('/homepage');
+                  },
                 ),
                 TextButton(
                   onPressed: () {
